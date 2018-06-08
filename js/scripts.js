@@ -1,5 +1,8 @@
 // business logic
 var cryptoFunction = function(string){
+  string = string.toLowerCase();
+  string = string.replace(/[^a-z]+/g," ");
+
   return string;
 
 };
